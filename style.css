@@ -1,3 +1,5 @@
+/*Header*/
+
 header {
   display: flex;
   position: fixed;
@@ -32,4 +34,51 @@ header nav {
 
 .Nav-Links {
   display: inline-block;
+}
+
+nav span {
+  padding: 10px;
+}
+
+/*Content*/
+
+.content {
+  display: flex;
+  width: 1300px;
+  border: 1px solid black;
+  padding: 100px 40px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 78px;
+  margin-left: auto;
+  padding-top: 116px;
+  justify-content: space-between;
+}
+
+.column {
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px auto;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.image-text {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.article {
+  border: 1px solid black;
 }
