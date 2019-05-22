@@ -45,7 +45,6 @@ nav span {
 .content {
   display: flex;
   width: 1300px;
-  border: 1px solid black;
   padding: 100px 40px;
   margin-top: 0px;
   margin-right: auto;
@@ -62,7 +61,6 @@ nav span {
 }
 
 .column {
-  border: 1px solid black;
   display: flex;
   flex-flow: row wrap;
   margin: 0px auto;
@@ -71,7 +69,6 @@ nav span {
 .image-text {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   height: 300px;
   font-family: Georgia;
   font-weight: bold;
@@ -81,18 +78,29 @@ nav span {
 }
 
 .article {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 /*LARGE Column*/
 
 .column.large {
   width: 630px;
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
 }
 
 .mother.article span {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
-  width: 630px;
+  background-repeat: repeat-x;
+  width: 100%;
   height: 300px;
   margin-top: 0;
   text-align: left;
@@ -101,12 +109,14 @@ nav span {
 
 .earth {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
-  width: 290px;
+  background-repeat: repeat-x;
+  width: 299px;
   height: 300px;
 }
 
 .research {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+  background-repeat: repeat-x;
   width: 299px;
   height: 300px;
 }
@@ -115,16 +125,54 @@ nav span {
 
 .column.medium {
   width: 300px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.fbi.article {
+  width: 100%;
 }
 
 .cats.article span {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
-  width: 299px;
-  height: 300px;
+  background-repeat: repeat-x;
+  width: 100%;
 }
 
 /*SMALL Column*/
 
 .column.small {
   width: 240px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.cookie {
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 240px;
+}
+
+.newsbites.article {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  width: 100%;
+}
+
+.small span {
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  display: block;
+  padding: 10px;
+}
+
+.small h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
 }
